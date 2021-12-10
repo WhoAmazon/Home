@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<title>WHO-Amazon</title>
+<link href="fav.ico" rel="shortcut icon" />
+<style>
+    body{
+        background-color: rgb(59, 59, 59);
+    }
+    h1{
+        font-size: 2.5em;
+        line-height: 75px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        background-color: gold;
+        padding: 10px;
+    }
+
+    h2{
+        text-align: right;
+        padding: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+    h2 img{
+        float: left;
+        margin-top: -150px;
+    }
+    h3{
+        font-size: 1.8em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    h4{
+        font-size: 2.5em;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .nav-bar{
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul li{
+        
+        float: right;
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li a{
+        font-family: Arial;
+        color: #272727;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 28px;
+        display: block;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        background-color: #3C3C3C;
+        padding: 7px;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    nav ul li:hover ul{
+        display: block;
+        position: absolute;
+        background-color: #3C3C3C;
+        padding: 7px;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+
+    nav ul li ul li a{
+        color: white;
+        padding: 16px 20px;
+    }
+
+    nav ul li ul li a:hover{
+        background-color: #272727;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .beschreibung{
+        background-color: grey;
+        border: 2px solid  gold;
+    }
+
+
+    aside{
+        width: 280px;
+        background-color: #3C3C3C;
+        margin: 20px;
+        display: inline-block;
+        border-radius: 0.3em 0.3em 0.3em 0.3em;
+
+    }
+
+
+    aside:hover{
+        transform: scale(1.02);
+        z-index: 2;
+    }
+
+    aside a{
+        text-decoration: none;
+    }
+
+    aside a h3:hover{
+        color: gold;
+    }
+
+
+    aside img{
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    
+    nav ul li form input{
+        width: 60%;
+        height: 35px;
+        
+    }
+
+    nav ul li form label span{
+        font-size: 19px;
+        padding: 20px;
+    }
+
+    nav ul li form button{
+        height: 41px;
+        width: 80px;
+    }
+
+    nav ul li form button:hover{
+        background-color: gold;
+    }
+
+    .kategorys{
+        background-color: gold;
+        width: 80%;
+        margin: 100px;
+        border: 2px solid gold;
+    }
+
+    .kategorys2{
+        background-color: #DCDCDC;
+        width: 700px;
+        margin: 100px;
+        border: 2px solid gold;
+        float: right;
+    }
+
+    .kategorys3{
+        background-color: rgb(156, 156, 156);
+        width: 80%;
+        margin: 100px;
+    }
+
+    .a-box{
+        margin: 40px;
+    }
+
+    .produktempfehlung{
+        width: 60%;
+        float: center;
+        background-color: rgb(236, 236, 236);
+        border-bottom: 2px solid black;
+    
+    }
+    
+
+    .produktempfehlung a{
+        padding: 10px;
+        color: rgb(95, 98, 255);
+        
+    }
+
+    
+
+    .produktempfehlung a img{
+        margin-top: 10px;
+    }
+
+    .produktempfehlung-bild{
+        float: left;
+    }
+    
+
+
+</style>
+
+<body>
+<div class="nav-bar">
+    <nav>
+        
+        <ul>
+            <li><a href="#">Alle Kategorien	↓</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marken.html">Alle Marken</a></li>
+                    <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
+                    <li><a href="smartwatches.html">Smartwatches</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="stand-pc's.html">Stand-Pc's</a></li>
+                    <li><a href="Pc-Komponenten.html">Komponenten</a></li>
+                    <li><a href="monitore.html">Monitore</a></li>
+                    <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
+                    <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
+                </ul></li>
+                <li> <form action="https://www.amazon.com/s" target="_blank">
+                    <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
+                    <input id="k" name="k" placeholder="Search in Amazon...." >
+                    <button>Search</button>
+                    </form>
+                </center>
+                <br /></li>
+        </ul>
+    </nav>
+    <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
+</div>
+   
+
+    <center><div class="beschreibung">
+        <h2>Willkommen auf der offiziellen Who <br /> AmazonPartner Seite hier können Sie<br />  alle Amazon Produkte, <br /> die von WHO empfohlen werden<br /> zu den besten Konditionen
+           kaufen.<br /> Bei uns gibt es die<br /> beste Technik, Elektronik <br />und Software.<br /><img src="pics/adsjflk.png" width="400px" height="150px"/> </h2>
+            
+        
+    </div></center>
+    <br />
+    <br />
+<center>
+   <div class="kategorys"><br /><div class="a-box"><h4><u>Alle Kategorien:</u></h4></div>
+    <center>
+        <aside><a href="marken.html">
+         <h3>Marken</h3>
+            <center><img src="pics/marken-vorschau.png" width="200px"/></center>
+            <br />
+            <br /></a>
+        </aside>
+        
+        <aside><a href="smartphonesundzubehör.html">
+         <h3>Smartphones</h3>
+             <center><img src="pics/smartphones-vorschau.png" width="200px"/></center>
+             <br />
+             <br /></a>
+        </aside>
+        
+        <aside><a href="smartwatches.html">
+            <h3>Smartwatches</h3>
+                <center><img src="pics/Smartwatches-Vorschau.png" width="200px"/></center>
+                <br />
+                <br /></a>
+        </aside>
+        
+
+                
+              <aside><a href="laptops_und_pcs.html">
+               <h3>PC's/Laptops</h3>
+               <center><img src="pics/laptops-vorschau.png" width="220px"/></center>
+                <br />
+                <br /></a>
+            </aside>
+                
+            <aside><a href="Pc-Komponenten.html">
+                <h3>PC-Komponenten</h3>
+                    <center><img src="pics/pc-komponenten-vorschau.png" width="220px"/></center>
+                    <br />
+                    <br /></a>
+            </aside>
+              
+        
+    
+                <aside><a href="monitore.html">
+                    <h3>Monitore</h3>
+                    <center><img src="pics/Monitore-vorschau.png" width="220px"/></center>
+                    <br />
+                    <br /></a>
+                </aside>
+                       
+                <aside><a href="Kopfhörer-und-Lautsprecher.html">
+                    <h3>Kopfhörer/Speaker</h3>
+                    <center><img src="pics/Lautsprecher-Kopfhörer-vorschau.png" width="220px"/></center>
+                    <br />
+                    <br /></a>
+                </aside>
+                       
+                <aside><a href="Peripherie-gadgets.html">
+                    <h3>Peripherie</h3>
+                       <center><img src="pics/peripherieundgadgets-vorschau.png" width="220px"/></center>
+                        <br />
+                        <br /></a>
+                </aside>
+            </center>
+        </div>  </center>     
+        
+        
+<center>
+        <div class="kategorys3"><br /><div class="a-box"><h4><u>Unsere Produktempfehlungen:</u></h4></div>
+    <center>
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/iphone12.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3">1. Apple iPhone 12 (128&nbsp;GB) - Schwarz <br /> ab 804,99€<br /></a>
+            In Smartphones
+        </div>
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/s21.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08QXG6Y6F/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08QXG6Y6F&linkCode=as2&tag=who0fb-21&linkId=cff361406f4853c58954b909221b6d76">2. Samsung Galaxy S21 5G Smartphone 128GB Phantom Gray Android 11.0 G991B<br /> ab 709,99€<br /></a>
+            In Smartphones
+        </div>
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/ipad9.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B09G9B4SH9/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B09G9B4SH9&linkCode=as2&tag=who0fb-21&linkId=d77636d1651589b7b5ef3973cd264647">3. 2021 Apple&nbsp;iPad (10,2", Wi-Fi, 64&nbsp;GB) - Space Grau (9. Generation) <br /> ab 379,99€<br /></a>
+            In Tablets
+        </div>
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/hp15-dw1219.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08TM9XKP2/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08TM9XKP2&linkCode=as2&tag=who0fb-21&linkId=97ae34c6e8a1bee8da180a780cd14b22">4. HP 15-dw1219ng (15,6 Zoll / FHD) Laptop 8gb ram 256gb ssd silber <br /> ab 449,00€<br /></a>
+            In Laptops und PC's
+        </div>
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/airpods.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B07PZR3PVB/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B07PZR3PVB&linkCode=as2&tag=who0fb-21&linkId=5c70207219fcacac798acde25fdba76b">5. Apple AirPods mit kabelgebundenem Ladecase<br />ab 159,00€<br /></a>
+            In Kopfhörer-und-Lautsprecher
+        </div>
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/aoc-c24g2ae.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08HSKFNY6/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08HSKFNY6&linkCode=as2&tag=who0fb-21&linkId=4b377df89c57cb09b09d402a3e3f300c">6. AOC Gaming C24G2AE - 24 Zoll Curved 165 Hz, 1ms, schwarz<br /> ab 199,00€<br /></a>
+            In Monitore
+        </div>
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/jbl charge 5.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08VDNCZT9/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08VDNCZT9&linkCode=as2&tag=who0fb-21&linkId=b691180573a74069026d227f7a0fea91">7. JBL Charge 5 Bluetooth-Lautsprecher in Schwarz – Akku-Ladung für bis zu 20 Stunden<br /> ab 149,99€<br /></a>
+            In Kopfhörer-und-Lautsprecher
+        </div>
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/asusb450.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B08K96RV9H/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08K96RV9H&linkCode=as2&tag=who0fb-21&linkId=5623ba66035460d96e2e0abb86726979">8. Asus ROG Strix B450-F Gaming II Mainboard Sockel AM4,DDR4 Speicher, M.2,Aura Sync<br /> ab 110,79€<br /></a>
+            In PC-Komponenten
+        </div>
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/corsair-vengeance-rgb-pro.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B07D1XCKWW/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B07D1XCKWW&linkCode=as2&tag=who0fb-21&linkId=8d2058caeb71407b3e7a7a5f48056a58">9. Corsair Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz<br /> ab 73,90€<br /></a>
+            In PC-Komponenten
+        </div>
+
+
+
+        <div class="produktempfehlung">
+            <div class="produktempfehlung-bild"><a target="_blank" href="https://www.amazon.de/gp/product/B08L5W8H9T/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B08L5W8H9T&linkCode=as2&tag=who0fb-21&linkId=9ff5cfdc24308afdb8a48b93ab5391d3"><img src="pics/Produktempfehlungen/hyperxcloud2.jpg" width="30px"/></a></div>
+            <a target="_blank" href="https://www.amazon.de/gp/product/B00SAYCXWG/ref=as_li_tl?ie=UTF8&camp=1638&creative=6742&creativeASIN=B00SAYCXWG&linkCode=as2&tag=who0fb-21&linkId=de602ac30d3117a12803ddbad9ba058d">HyperX KHX-HSCP-RD Cloud II - Gaming Kopfhörer (für PC/PS4/Mac) rot<br > ab 68,20€<br ></a>
+            In Peripherie
+        </div>
+        <br />
+        <br />
+        <br />
+    </center>
+        </div>
+
+
+</body>
