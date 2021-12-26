@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<title>Monitore</title>
+<title>WHO-Amazon</title>
 <link href="fav.ico" rel="shortcut icon" />
-
 <style>
     body{
         background-color: rgb(59, 59, 59);
@@ -99,16 +98,12 @@
 
 
    aside{
-        width: 180px;
+        width: 280px;
         background-color: #858585;
         margin: 20px;
         display: inline-block;
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        border-radius: 0.3em 0.3em 0.3em 0.3em;
 
-    }
-
-    aside a{
-        text-decoration: none;
     }
 
 
@@ -131,21 +126,34 @@
         border-radius: 0.5em 0.5em 0.5em 0.5em;
     }
 
-    
-    nav ul li form input{
-        width: 60%;
-        height: 35px;
+    li form{
+        margin-left: 20px;
+    }
+
+    li form input{
+        width: 90%;
+        height: 100px;
         
     }
 
-    nav ul li form label span{
-        font-size: 19px;
-        padding: 20px;
+    li form ::placeholder{
+        font-size: 50px;
     }
 
-    nav ul li form button{
-        height: 41px;
-        width: 80px;
+    li form label span{
+        font-size: 19px;
+    }
+
+    li form button{
+        height: 100px;
+        width: 200px;
+        font-size: 50px;
+        margin: 5px;
+        
+    }
+
+    li form label span{
+        font-size: 0px;
     }
 
     nav ul li form button:hover{
@@ -153,12 +161,6 @@
     }
 
     .nav-bar .search-button a img{
-            display: none;
-        }
-
-        
-
-    .nav-bar .search-button1 a img{
             display: none;
         }
 
@@ -177,7 +179,9 @@
         float: right;
     }
 
-    
+    .a-box{
+        margin: 40px;
+    }
     
     .kategorys3{
         background-color: rgb(156, 156, 156);
@@ -214,45 +218,13 @@
     .produktempfehlung-bild{
         float: left;
     }
-
-    .vorschau aside{
-        display: none;
-    }
-
-    
     
 
 
     @media(max-width:1000px) {
-        .a-box h4 u{
-            display: none;
-        }
-
-        .vorschau aside{
-        margin-bottom: 10px;
-        border-bottom: 2px solid black;
-        width: 100%;
-        height: 200px;
-        background-color: #DCDCDC;
-        display: block;
-        border-radius: 0.3em 0.3em 0.3em 0.3em;
-        }
-
-        .vorschau aside img{
-                border-radius: 0.5em 0.5em 0.5em 0.5em;
-                width:160px;
-                padding: 20px;
-                float: right;
-        }
-
-        .vorschau aside h3{
-                float: left;
-                padding: 10px;
-                font-size: 3em;
-        }
 
         h1 a img{
-            width: 315px;
+            width: 300px;
             height: 100px;
         }
 
@@ -265,7 +237,6 @@
         .nav-bar{
         position: sticky;
         top: 0;
-        z-index: 2;
         }
 
         nav ul li{
@@ -287,16 +258,7 @@
         .nav-bar .search-button a img{
             float: right;
             display: block;
-            width: 120px;
-            padding-right: 20px;
-            padding-top: 10px;
-        }
-
-        .nav-bar .search-button1 a img{
-            float: left;
-            display: block;
-            width: 100px;
-            padding-left: 10px;
+            width: 140px;
         }
             
 
@@ -317,7 +279,7 @@
         }
         aside img{
             border-radius: 0.5em 0.5em 0.5em 0.5em;
-            width:115px;
+            width:120px;
             padding: 20px;
             float: right;
         }
@@ -383,102 +345,24 @@
                         <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
                         <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
                     </ul></li>
-                    <li> <form action="https://www.amazon.com/s" target="_blank">
-                        <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
-                        <input id="k" name="k" placeholder="Search in Amazon...." >
-                        <button>Search</button>
-                        </form>
-                        
-                    </center>
-                    <br /></li>
             </ul>
         </nav>
+
         <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
-        <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
         <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
     </div>
-   
 
+
+                <li> <form action="https://www.amazon.com/s" target="_blank">
+                    <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
+                    <input id="k" name="k" placeholder="Search in Amazon...." >
+                    <button>Search</button>
+                    </form>
+                    
+
+                <br /></li>
+        
     
-<center>
-    <div class="a-box"><h4><u>Monitore</u></h4></div>
-    <center>
 
-        <div class="vorschau">
-            <aside>
-                <h3>Monitore</h3>
-                   <center><img src="pics/Monitore-vorschau.png" width="120px"/></center>
-                   <br />
-                   <br />
-            </aside>
-            </div>
-
-            <a href="monitore/Lg.html"><aside>
-            <h3>LG</h3>
-               <center><img src="pics/Monitore/lg.png" width="120px"/></center>
-               <br />
-               <br />
-           </aside></a>
-
-           <a href="monitore/asus.html"><aside>
-         <h3>Asus</h3>
-            <center><img src="pics/PC'S/asus.png" width="120px"/></center>
-            <br />
-            <br />
-        </aside></a>
-        
-        <a href="monitore/hp.html"><aside>
-         <h3>hp</h3>
-             <center><img src="pics/Monitore/hp.png" width="120px"/></center>
-             <br />
-             <br />
-        </aside></a>
-        
-        <a href="monitore/samsung.html"><aside>
-            <h3>Samsung</h3>
-                <center><img src="pics/Monitore/samsung.png" width="120px"/></center>
-                <br />
-                <br />
-        </aside></a>
-               
-        <a href="monitore/medion.html"><aside>
-                <h3>Medion</h3>
-                <center><img src="pics/Monitore/medion.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-
-            <a href="monitore/acer.html"><aside>
-                <h3>Acer</h3>
-                <center><img src="pics/Monitore/acer.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-
-
-            <a href="monitore/aoc.html"><aside>
-                <h3>Aoc</h3>
-                <center><img src="pics/Monitore/aoc.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-            <a href="monitore/gaming-monitore.html"><aside>
-                <h3>Gaming</h3>
-                <center><img src="pics/Monitore/gaming-monitore.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-            <a href="monitore/ultrawide-monitore.html"><aside>
-                <h3>Ultrawide</h3>
-                <center><img src="pics/Monitore/ultrawide-monitore.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-        </div>  </center>                  
 
 </body>

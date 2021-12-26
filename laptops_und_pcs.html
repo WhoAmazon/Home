@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <title>Laptops-WHO-Amazon</title>
+<link href="fav.ico" rel="shortcut icon" />
 
 <style>
     body{
@@ -31,7 +32,7 @@
         font-size: 1.5em;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: black;
     }
     h4{
         font-size: 2.5em;
@@ -97,27 +98,31 @@
     }
 
 
-    aside{
+   aside{
         width: 180px;
-        height: 220px;
-        background-color: #3C3C3C;
+        background-color: #858585;
         margin: 20px;
         display: inline-block;
         border-radius: 0.7em 0.7em 0.7em 0.7em;
 
     }
 
-
-    aside:hover{
-        transform: scale(1.02);
-        z-index: 2;
-    }
-
     aside a{
         text-decoration: none;
     }
 
-    aside a h3:hover{
+
+    aside:hover{
+        transform: scale(1.02);
+        z-index: 2;
+        
+    }
+
+    a aside{
+        text-decoration: none;
+    }
+
+    a aside h3:hover{
         color: gold;
     }
 
@@ -147,6 +152,16 @@
         background-color: gold;
     }
 
+    .nav-bar .search-button a img{
+            display: none;
+        }
+
+        
+
+    .nav-bar .search-button1 a img{
+            display: none;
+        }
+
     .kategorys{
         background-color: gold;
         width: 80%;
@@ -162,169 +177,342 @@
         float: right;
     }
 
-    .a-box{
-        margin: 40px;
+    
+    
+    .kategorys3{
+        background-color: rgb(156, 156, 156);
+        width: 80%;
+        margin: 100px;
     }
 
+    .produktempfehlung{
+        width: 60%;
+        float: center;
+        background-color: rgb(236, 236, 236);
+        border-bottom: 2px solid black;
+    
+    }
+    
+    .produktempfehlung:hover{
+        background-color: gold;
+        transition: 0.5s
+    }
+    
 
-    @media(max-width: 1050px){
+    .produktempfehlung a{
+        padding: 10px;
+        color: rgb(95, 98, 255);
+        
+    }
+
+    
+
+    .produktempfehlung a img{
+        margin-top: 10px;
+    }
+
+    .produktempfehlung-bild{
+        float: left;
+    }
+
+    .vorschau aside{
+        display: none;
+    }
+
+    
+    
+
+
+    @media(max-width:1000px) {
+        .a-box h4 u{
+            display: none;
+        }
+
+        .vorschau aside{
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+        width: 100%;
+        height: 200px;
+        background-color: #DCDCDC;
+        display: block;
+        border-radius: 0.3em 0.3em 0.3em 0.3em;
+        }
+
+        .vorschau aside img{
+                border-radius: 0.5em 0.5em 0.5em 0.5em;
+                width:160px;
+                padding: 20px;
+                float: right;
+        }
+
+        .vorschau aside h3{
+                float: left;
+                padding: 10px;
+                font-size: 3em;
+        }
+
+        h1 a img{
+            width: 315px;
+            height: 100px;
+        }
+
+        h4{
+          font-size: 2.8em;
+          text-align: left;
+          color: white;
+        }
+
+        .nav-bar{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        }
+
+        nav ul li{
+            float: right;
+            list-style: none;
+            position: relative;
+        }      
+
+        nav ul li a{
+            
+            display: none;
+        }
+
+        nav ul li form{
+            display: none;
+        
+        }   
+
+        .nav-bar .search-button a img{
+            float: right;
+            display: block;
+            width: 120px;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+
+        .nav-bar .search-button1 a img{
+            float: left;
+            display: block;
+            width: 100px;
+            padding-left: 10px;
+        }
+            
+
+
         aside{
-        width: 230px;
-        height: 220px;
-        background-color: #3C3C3C;
-        margin: 20px;
-        display: inline-block;
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
+            margin: 1px;
+            border-bottom: 2px solid black;
+            width: 100%;
+            height: 160px;
+            background-color: white;
+            display: block;
+            border-radius: 0.3em 0.3em 0.3em 0.3em;
+        }
+        h3{
+            float: left;
+            padding: 10px;
+            font-size: 2.2em;
+        }
+        aside img{
+            border-radius: 0.5em 0.5em 0.5em 0.5em;
+            width:115px;
+            padding: 20px;
+            float: right;
+        }
+        .kategorys{
+            width: 100%;
+    }
+        .produktempfehlung{
+        width: 100%;
+        float: center;
+        background-color: rgb(236, 236, 236);
+        border-bottom: 2px solid black;
+        font-size: 1.6em;
+    
+    }
+    
+    .produktempfehlung:hover{
+        background-color: gold;
+        transition: 0.5s
+    }
+    
 
+    .produktempfehlung a{
+        padding: 10px;
+        color: rgb(95, 98, 255);
+        font-size: 1.2em;
+        
+    }
+
+    
+
+    .produktempfehlung a img{
+        margin-top: 10px;
+    }
+
+    .produktempfehlung-bild{
+        float: left;
+    }
+        
+    .produktempfehlung-bild a img{
+    
+        width: 100px
     }
     }
-
     
 
 
 </style>
-
 <body>
-<div class="nav-bar">
-    <nav>
-        
-        <ul>
-            <li><a href="#">Alle Kategorien	↓</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="marken.html">Alle Marken</a></li>
-                    <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                    <li><a href="smartwatches.html">Smartwatches</a></li>
-                    <li><a href="laptops.html">Laptops</a></li>
-                    <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                    <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                    <li><a href="monitore.html">Monitore</a></li>
-                    <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                    <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                </ul></li>
-                <li> <form action="https://www.amazon.com/s" target="_blank">
-                    <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
-                    <input id="k" name="k" placeholder="Search in Amazon...." >
-                    <button>Search</button>
-                    </form>
-                </center>
-                <br /></li>
-        </ul>
-    </nav>
-    <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
-</div>
-   
+    <div class="nav-bar">
+        <nav>
+            
+            <ul>
+                <li><a href="#">Alle Kategorien	↓</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="marken.html">Alle Marken</a></li>
+                        <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
+                        <li><a href="smartwatches.html">Smartwatches</a></li>
+                        <li><a href="laptops.html">Laptops</a></li>
+                        <li><a href="stand-pc's.html">Stand-Pc's</a></li>
+                        <li><a href="Pc-Komponenten.html">Komponenten</a></li>
+                        <li><a href="monitore.html">Monitore</a></li>
+                        <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
+                        <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
+                    </ul></li>
+                    <li> <form action="https://www.amazon.com/s" target="_blank">
+                        <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
+                        <input id="k" name="k" placeholder="Search in Amazon...." >
+                        <button>Search</button>
+                        </form>
+                        
+                    </center>
+                    <br /></li>
+            </ul>
+        </nav>
+        <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
+        <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
+        <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
+    </div>
 
-    <br />
-    <br />
+    
 <center>
-   <div class="kategorys"><br /><div class="a-box"><h4><u>Laptops</u></h4></div>
+   <div class="a-box"><h4><u>Laptops</u></h4></div>
     <center>
-        <aside><a href="laptop-marken/apple.html">
+
+        <div class="vorschau">
+            <aside>
+                <h3>Laptops</h3>
+                   <center><img src="pics/laptops-vorschau.png" width="120px"/></center>
+                   <br />
+                   <br />
+            </aside>
+            </div>
+
+        <a href="laptop-marken/apple.html"><aside>
             <h3>Apple</h3>
                <center><img src="pics/Laptops/apple.png" width="120px"/></center>
                <br />
-               <br /></a>
-           </aside>
+               <br />
+           </aside></a>
 
-        <aside><a href="laptop-marken/asus.html">
+        <a href="laptop-marken/asus.html"><aside>
          <h3>Asus</h3>
             <center><img src="pics/Laptops/asus.png" width="120px"/></center>
             <br />
-            <br /></a>
-        </aside>
+            <br />
+        </aside></a>
         
-        <aside><a href="laptop-marken/hp.html">
+        <a href="laptop-marken/hp.html"><aside>
          <h3>hp</h3>
              <center><img src="pics/Laptops/hp.png" width="120px"/></center>
              <br />
-             <br /></a>
-        </aside>
+             <br />
+        </aside></a>
         
-        <aside><a href="laptop-marken/lenovo.html">
+        <a href="laptop-marken/lenovo.html"><aside>
             <h3>Lenovo</h3>
                 <center><img src="pics/Laptops/lenovo.png" width="120px"/></center>
                 <br />
-                <br /></a>
-        </aside>
-               
-            <aside><a href="laptop-marken/medion.html">
-                <h3>Medion</h3>
-                <center><img src="pics/Laptops/medion.png" width="120px"/></center>
                 <br />
-                <br /></a>
-            </aside>
+        </aside></a>
 
 
-            <aside><a href="laptop-marken/surface.html">
+        <a href="laptop-marken/surface.html"><aside>
                 <h3>Surface</h3>
                 <center><img src="pics/Laptops/surface.png" width="120px"/></center>
                 <br />
-                <br /></a>
-            </aside>
+                <br />
+            </aside></a>
 
 
 
-            <aside><a href="laptop-marken/gaming-laptops.html">
+            <a href="laptop-marken/gaming-laptops.html"><aside>
                 <h3>Gaming</h3>
                 <center><img src="pics/Laptops/gaming-laptops.png" width="120px"/></center>
                 <br />
-                <br /></a>
-            </aside>
+                <br />
+            </aside></a>
 
    
-            <h4><u>Stand-Pc's</u></h4>
-            <aside><a href="PC-marken/apple-imac.html">
+            <div class="a-box"><h4><u>Stand-PC's</u></h4></div>
+
+            <div class="vorschau">
+                <aside>
+                    <h3>Stand-PC's</h3>
+                       <center><img src="pics/stand-pcs-vorschau.png" width="120px"/></center>
+                       <br />
+                       <br />
+                </aside>
+                </div>
+
+            <a href="PC-marken/apple-imac.html"><aside>
                 <h3>Apple IMAC</h3>
                    <center><img src="pics/PC'S/apple-imac.png" width="120px"/></center>
                    <br />
-                   <br /></a>
-               </aside>
+                   <br />
+               </aside></a>
     
-            <aside><a href="PC-marken/asus.html">
+            <a href="PC-marken/asus.html"><aside>
              <h3>Asus</h3>
                 <center><img src="pics/PC'S/asus.png" width="120px"/></center>
                 <br />
-                <br /></a>
-            </aside>
+                <br />
+            </aside></a>
             
-            <aside><a href="PC-marken/hp.html">
+            <a href="PC-marken/hp.html"><aside>
              <h3>hp</h3>
                  <center><img src="pics/PC'S/hp.png" width="120px"/></center>
                  <br />
-                 <br /></a>
-            </aside>
+                 <br />
+            </aside></a>
             
-            <aside><a href="PC-marken/lenovo.html">
+            <a href="PC-marken/lenovo.html"><aside>
                 <h3>Lenovo</h3>
                     <center><img src="pics/PC'S/lenovo.png" width="120px"/></center>
                     <br />
-                    <br /></a>
-            </aside>
-                   
-                <aside><a href="PC-marken/medion.html">
-                    <h3>Medion</h3>
-                    <center><img src="pics/PC'S/medion.png" width="120px"/></center>
                     <br />
-                    <br /></a>
-                </aside>
+            </aside></a>
     
     
-                <aside><a href="PC-marken/acer.html">
+            <a href="PC-marken/acer.html"><aside>
                     <h3>Acer</h3>
                     <center><img src="pics/PC'S/acer.png" width="120px"/></center>
                     <br />
-                    <br /></a>
-                </aside>
+                    <br />
+                </aside></a>
     
     
     
-                <aside><a href="PC-marken/Gaming-Pc's.html">
+                <a href="PC-marken/Gaming-Pc's.html"><aside>
                     <h3>Gaming PC'S</h3>
                     <center><img src="pics/PC'S/gaming-pcs.png" width="120px"/></center>
                     <br />
-                    <br /></a>
-                </aside>
+                    <br />
+                </aside></a>
     
             </div>  </center>   
 

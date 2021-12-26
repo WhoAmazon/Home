@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<title>Monitore</title>
+<title>WHO-Amazon</title>
 <link href="fav.ico" rel="shortcut icon" />
-
 <style>
     body{
         background-color: rgb(59, 59, 59);
@@ -19,10 +18,10 @@
     h2{
         text-align: right;
         padding: 20px;
-        font-size: 14px;
+        font-size: 50px;
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: white;
+        color: gold;
     }
     h2 img{
         float: left;
@@ -40,9 +39,17 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
+    h6{
+        text-align: left;
+        padding: 20px;
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
     .nav-bar{
         position: sticky;
         top: 0;
+        z-index: 2;
     }
 
     nav ul li{
@@ -95,20 +102,18 @@
     .beschreibung{
         background-color: grey;
         border: 2px solid  gold;
+        width: 300px;
+        margin: 20px;
     }
 
 
    aside{
-        width: 180px;
+        width: 280px;
         background-color: #858585;
         margin: 20px;
         display: inline-block;
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        border-radius: 0.3em 0.3em 0.3em 0.3em;
 
-    }
-
-    aside a{
-        text-decoration: none;
     }
 
 
@@ -156,8 +161,6 @@
             display: none;
         }
 
-        
-
     .nav-bar .search-button1 a img{
             display: none;
         }
@@ -177,7 +180,9 @@
         float: right;
     }
 
-    
+    .a-box{
+        margin: 40px;
+    }
     
     .kategorys3{
         background-color: rgb(156, 156, 156);
@@ -214,45 +219,13 @@
     .produktempfehlung-bild{
         float: left;
     }
-
-    .vorschau aside{
-        display: none;
-    }
-
-    
     
 
 
     @media(max-width:1000px) {
-        .a-box h4 u{
-            display: none;
-        }
-
-        .vorschau aside{
-        margin-bottom: 10px;
-        border-bottom: 2px solid black;
-        width: 100%;
-        height: 200px;
-        background-color: #DCDCDC;
-        display: block;
-        border-radius: 0.3em 0.3em 0.3em 0.3em;
-        }
-
-        .vorschau aside img{
-                border-radius: 0.5em 0.5em 0.5em 0.5em;
-                width:160px;
-                padding: 20px;
-                float: right;
-        }
-
-        .vorschau aside h3{
-                float: left;
-                padding: 10px;
-                font-size: 3em;
-        }
 
         h1 a img{
-            width: 315px;
+            width: 300px;
             height: 100px;
         }
 
@@ -317,7 +290,7 @@
         }
         aside img{
             border-radius: 0.5em 0.5em 0.5em 0.5em;
-            width:115px;
+            width:120px;
             padding: 20px;
             float: right;
         }
@@ -357,128 +330,129 @@
     }
         
     .produktempfehlung-bild a img{
-    
-        width: 100px
+        width: 100px;
     }
+    }
+
+
+    .intro{
+        background-image: url(pics/computer-g0efe189e0_1920.png);
+    }
+
+    .index-img img{
+        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        margin: 20px;
+    }
+
+    .index-img2 img{
+        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        margin: 20px;
     }
     
 
 
 </style>
 <body>
-    <div class="nav-bar">
-        <nav>
-            
-            <ul>
-                <li><a href="#">Alle Kategorien	↓</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="marken.html">Alle Marken</a></li>
-                        <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                        <li><a href="smartwatches.html">Smartwatches</a></li>
-                        <li><a href="laptops.html">Laptops</a></li>
-                        <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                        <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                        <li><a href="monitore.html">Monitore</a></li>
-                        <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                        <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                    </ul></li>
-                    <li> <form action="https://www.amazon.com/s" target="_blank">
-                        <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
-                        <input id="k" name="k" placeholder="Search in Amazon...." >
-                        <button>Search</button>
-                        </form>
-                        
-                    </center>
-                    <br /></li>
-            </ul>
-        </nav>
-        <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
-        <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
-        <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
-    </div>
+<div class="nav-bar">
+    <nav>
+        
+        <ul>
+            <li><a href="#">Alle Kategorien	↓</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="marken.html">Alle Marken</a></li>
+                    <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
+                    <li><a href="smartwatches.html">Smartwatches</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="stand-pc's.html">Stand-Pc's</a></li>
+                    <li><a href="Pc-Komponenten.html">Komponenten</a></li>
+                    <li><a href="monitore.html">Monitore</a></li>
+                    <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
+                    <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
+                </ul></li>
+                <li> <form action="https://www.amazon.com/s" target="_blank">
+                    <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
+                    <input id="k" name="k" placeholder="Search in Amazon...." >
+                    <button>Search</button>
+                    </form>
+                    
+                </center>
+                <br /></li>
+        </ul>
+    </nav>
+    <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
+    <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
+    <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
+</div>
    
 
-    
+
+
+ 
 <center>
-    <div class="a-box"><h4><u>Monitore</u></h4></div>
+  <br /><div class="a-box"><h4><u>Alle Kategorien:</u></h4></div>
     <center>
-
-        <div class="vorschau">
-            <aside>
-                <h3>Monitore</h3>
-                   <center><img src="pics/Monitore-vorschau.png" width="120px"/></center>
-                   <br />
-                   <br />
-            </aside>
-            </div>
-
-            <a href="monitore/Lg.html"><aside>
-            <h3>LG</h3>
-               <center><img src="pics/Monitore/lg.png" width="120px"/></center>
-               <br />
-               <br />
-           </aside></a>
-
-           <a href="monitore/asus.html"><aside>
-         <h3>Asus</h3>
-            <center><img src="pics/PC'S/asus.png" width="120px"/></center>
+ 
+        <a href="marken.html"><aside>
+         <h3>Marken</h3>
+            <center><img src="pics/marken-vorschau.png" width="200px"/></center>
             <br />
             <br />
-        </aside></a>
+            </aside></a>
         
-        <a href="monitore/hp.html"><aside>
-         <h3>hp</h3>
-             <center><img src="pics/Monitore/hp.png" width="120px"/></center>
+        <a href="smartphonesundzubehör.html"><aside>
+         <h3>Smartphones</h3>
+             <center><img src="pics/smartphones-vorschau.png" width="200px"/></center>
              <br />
              <br />
         </aside></a>
         
-        <a href="monitore/samsung.html"><aside>
-            <h3>Samsung</h3>
-                <center><img src="pics/Monitore/samsung.png" width="120px"/></center>
+        <a href="smartwatches.html"><aside>
+            <h3>Smartwatches</h3>
+                <center><img src="pics/Smartwatches-Vorschau.png" width="200px"/></center>
                 <br />
                 <br />
         </aside></a>
-               
-        <a href="monitore/medion.html"><aside>
-                <h3>Medion</h3>
-                <center><img src="pics/Monitore/medion.png" width="120px"/></center>
+        
+
+                
+             <a href="laptops_und_pcs.html"> <aside>
+               <h3>PC's/Laptops</h3>
+               <center><img src="pics/laptops-vorschau.png" width="200px"/></center>
                 <br />
                 <br />
             </aside></a>
-
-
-            <a href="monitore/acer.html"><aside>
-                <h3>Acer</h3>
-                <center><img src="pics/Monitore/acer.png" width="120px"/></center>
-                <br />
-                <br />
+                
+            <a href="Pc-Komponenten.html"><aside>
+                <h3>PC-Komponenten</h3>
+                    <center><img src="pics/pc-komponenten-vorschau.png" width="200px"/></center>
+                    <br />
+                    <br />
             </aside></a>
-
-
-
-            <a href="monitore/aoc.html"><aside>
-                <h3>Aoc</h3>
-                <center><img src="pics/Monitore/aoc.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-            <a href="monitore/gaming-monitore.html"><aside>
-                <h3>Gaming</h3>
-                <center><img src="pics/Monitore/gaming-monitore.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-            <a href="monitore/ultrawide-monitore.html"><aside>
-                <h3>Ultrawide</h3>
-                <center><img src="pics/Monitore/ultrawide-monitore.png" width="120px"/></center>
-                <br />
-                <br />
-            </aside></a>
-
-        </div>  </center>                  
-
+              
+        
+    
+                <a href="monitore.html"><aside>
+                    <h3>Monitore</h3>
+                    <center><img src="pics/Monitore-vorschau.png" width="200px"/></center>
+                    <br />
+                    <br />
+                </aside></a>
+                       
+                <a href="Kopfhörer-und-Lautsprecher.html"><aside>
+                    <h3>Kopfhörer/Speaker</h3>
+                    <center><img src="pics/Lautsprecher-Kopfhörer-vorschau.png" width="200px"/></center>
+                    <br />
+                    <br />
+                </aside></a>
+                       
+                <a href="Peripherie-gadgets.html"><aside>
+                    <h3>Peripherie</h3>
+                       <center><img src="pics/peripherieundgadgets-vorschau.png" width="200px"/></center>
+                        <br />
+                        <br />
+                </aside></a>
+            </center>
+        </div>  </center>     
+        
 </body>

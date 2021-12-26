@@ -18,10 +18,10 @@
     h2{
         text-align: right;
         padding: 20px;
-        font-size: 14px;
+        font-size: 50px;
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: white;
+        color: gold;
     }
     h2 img{
         float: left;
@@ -39,9 +39,17 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
+    h6{
+        text-align: left;
+        padding: 20px;
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
     .nav-bar{
         position: sticky;
         top: 0;
+        z-index: 2;
     }
 
     nav ul li{
@@ -94,6 +102,8 @@
     .beschreibung{
         background-color: grey;
         border: 2px solid  gold;
+        width: 300px;
+        margin: 20px;
     }
 
 
@@ -146,6 +156,14 @@
     nav ul li form button:hover{
         background-color: gold;
     }
+
+    .nav-bar .search-button a img{
+            display: none;
+        }
+
+    .nav-bar .search-button1 a img{
+            display: none;
+        }
 
     .kategorys{
         background-color: gold;
@@ -205,11 +223,57 @@
 
 
     @media(max-width:1000px) {
+
+        h1 a img{
+            width: 315px;
+            height: 100px;
+        }
+
         h4{
-          font-size: 2.4em;
+          font-size: 2.8em;
           text-align: left;
           color: white;
         }
+
+        .nav-bar{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        }
+
+        nav ul li{
+            float: right;
+            list-style: none;
+            position: relative;
+        }      
+
+        nav ul li a{
+            
+            display: none;
+        }
+
+        nav ul li form{
+            display: none;
+        
+        }   
+
+        .nav-bar .search-button a img{
+            float: right;
+            display: block;
+            width: 120px;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+
+        .nav-bar .search-button1 a img{
+            float: left;
+            display: block;
+            width: 100px;
+            padding-left: 10px;
+        }
+            
+
+
         aside{
             margin: 1px;
             border-bottom: 2px solid black;
@@ -267,8 +331,23 @@
         
     .produktempfehlung-bild a img{
     
-        width: 100px
+        width: 90px;
     }
+    }
+
+
+    .intro{
+        background-image: url(pics/computer-g0efe189e0_1920.png);
+    }
+
+    .index-img img{
+        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        margin: 20px;
+    }
+
+    .index-img2 img{
+        border-radius: 0.7em 0.7em 0.7em 0.7em;
+        margin: 20px;
     }
     
 
@@ -297,22 +376,22 @@
                     <input id="k" name="k" placeholder="Search in Amazon...." >
                     <button>Search</button>
                     </form>
+                    
                 </center>
                 <br /></li>
         </ul>
     </nav>
+    <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
+    <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
     <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
 </div>
    
 
-    <center><div class="beschreibung">
-        <h2>Willkommen auf der offiziellen Who <br /> AmazonPartner Seite hier können Sie<br />  alle Amazon Produkte, <br /> die von WHO empfohlen werden<br /> zu den besten Konditionen
-           kaufen.<br /> Bei uns gibt es die<br /> beste Technik, Elektronik <br />und Software.<br /><img src="pics/adsjflk.png" width="400px" height="150px"/> </h2>
-            
-        
-    </div></center>
-    <br />
-    <br />
+
+<center>
+<video src="pics/k.mp4" type="mp4/video" width="80%" height="60%" loop="true" autoplay="autoplay" controls muted></video>
+</center>
+ 
 <center>
   <br /><div class="a-box"><h4><u>Alle Kategorien:</u></h4></div>
     <center>
