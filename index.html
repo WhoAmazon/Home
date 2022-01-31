@@ -186,7 +186,8 @@
       background-color: transparent;
       color: white;
       padding: 16px;
-      font-size: 16px;
+      margin: 15px;
+      font-size: 18px;
       border: none;
     }
 
@@ -206,7 +207,7 @@
 
     .dropdown-content a {
       color: black;
-      padding: 12px 16px;
+      padding: 10px;
       text-decoration: none;
       display: block;
     }
@@ -214,7 +215,7 @@
 
     .dropdown:hover .dropdown-content {display: block;}
 
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    .dropdown-content a:hover {background-color: gold;}
 
     .a-box{
         margin: 40px;
@@ -265,6 +266,10 @@
             height: 110px;
             margin-top: 20px;
         }
+
+        .dropdown{
+            display: none;
+        }
         
         h1{
             line-height: 90px;
@@ -277,6 +282,7 @@
         }
 
         .nav-bar{
+        
         position: sticky;
         top: 0;
         z-index: 2;
@@ -303,7 +309,7 @@
             display: block;
             width: 110px;
             padding-right: 20px;
-            padding-top: 10px;
+            padding-top: 80px;
         }
 
         .nav-bar .search-button1 a img{
@@ -311,6 +317,7 @@
             display: block;
             width: 110px;
             padding-left: 10px;
+            padding-top: 80px;
         }
             
 
@@ -399,15 +406,7 @@
     <nav>
         
         <ul>
-                <li>
-                <div class="dropdown">
-                  <button class="dropbtn">Dropdown</button>
-                  <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                  </div>
-                </div>li>
+                
                 <li> <form action="https://www.amazon.com/s" target="_blank">
                     <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
                     <input id="k" name="k" placeholder="Search in Amazon...." >
@@ -416,6 +415,20 @@
                     
                 </center>
                 <br /></li>
+                <li>
+                    <div class="dropdown">
+                      <button class="dropbtn">Alle-Kategorien</button>
+                      <div class="dropdown-content">
+                        <a href="marken.html">Marken</a>
+                        <a href="smartphonesundzubehör.html">Smartphones</a>
+                        <a href="smartwatches.html">Smartwatch</a>
+                        <a href="laptops_und_pcs.html">PC/Laptop</a>
+                        <a href="Pc-Komponenten.html">PC-Komponenten</a>
+                        <a href="monitore.html">Monitore</a>
+                        <a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer/Speaker</a>
+                        <a href="Peripherie-gadgets.html">Peripherie</a>
+                      </div>
+                    </div></li>
         </ul>
     </nav>
     <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
