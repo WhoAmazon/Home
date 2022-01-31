@@ -181,6 +181,35 @@
         border: 2px solid gold;
         float: right;
     }
+    
+   .dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
     .a-box{
         margin: 40px;
@@ -365,19 +394,15 @@
     <nav>
         
         <ul>
-            <li><a href="#">Alle Kategorien	↓</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="marken.html">Alle Marken</a></li>
-                    <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                    <li><a href="smartwatches.html">Smartwatches</a></li>
-                    <li><a href="laptops.html">Laptops</a></li>
-                    <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                    <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                    <li><a href="monitore.html">Monitore</a></li>
-                    <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                    <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                </ul></li>
+                <li>
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown</button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>li>
                 <li> <form action="https://www.amazon.com/s" target="_blank">
                     <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
                     <input id="k" name="k" placeholder="Search in Amazon...." >
