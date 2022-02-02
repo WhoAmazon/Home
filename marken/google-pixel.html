@@ -5,15 +5,17 @@
 <style>
     body{
         background-color: rgb(59, 59, 59);
+        margin: 0em;
+        padding: 0em;
     }
     h1{
         font-size: 2.5em;
-        line-height: 65px;
+        line-height: 55px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         background-color: #fad000;
         padding: 10px;
-        margin-top: -10px
+        margin-top: -20px
     }
 
     h2{
@@ -50,6 +52,7 @@
     .nav-bar{
         position: sticky;
         top: 0;
+        z-index: 2;
     }
 
     nav ul li{
@@ -182,7 +185,47 @@
         
     }
 
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown-content a:hover {background-color: gold;}
+
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 16px;
+      margin: 15px;
+      font-size: 18px;
+      border: none;
+    }
+
     @media(max-width:1000px) {
+
+        .dropdown{
+            display: none;
+        }
 
         .produktlinks{
             overflow: hidden;
@@ -200,13 +243,22 @@
            padding-left: 80px;
            
         
-    }
+        }
 
 
 
         h1 a img{
-            width: 300px;
-            height: 100px;
+            width: 320px;
+            height: 110px;
+            margin-top: 30px;
+        }
+
+        .dropdown{
+            display: none;
+        }
+        
+        h1{
+            line-height: 75px;
         }
 
         h4{
@@ -216,9 +268,10 @@
         }
 
         .nav-bar{
+        
         position: sticky;
-        z-index: 2;
         top: 0;
+        z-index: 2;
         }
 
         nav ul li{
@@ -234,23 +287,24 @@
 
         nav ul li form{
             display: none;
-
+        
         }   
 
         .nav-bar .search-button a img{
             float: right;
             display: block;
-            width: 120px;
-            padding: 10px;
+            width: 110px;
+            padding-right: 20px;
+            padding-top: 40px;
         }
 
         .nav-bar .search-button1 a img{
             float: left;
             display: block;
-            width: 100px;
+            width: 110px;
             padding-left: 10px;
+            padding-top: 40px;
         }
-            
 
 
         aside{
@@ -321,19 +375,7 @@
         <nav>
             
             <ul>
-                <li><a href="#">Alle Kategorien	↓</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="marken.html">Alle Marken</a></li>
-                        <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                        <li><a href="smartwatches.html">Smartwatches</a></li>
-                        <li><a href="laptops.html">Laptops</a></li>
-                        <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                        <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                        <li><a href="monitore.html">Monitore</a></li>
-                        <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                        <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                    </ul></li>
+                    
                     <li> <form action="https://www.amazon.com/s" target="_blank">
                         <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
                         <input id="k" name="k" placeholder="Search in Amazon...." >
@@ -342,66 +384,80 @@
                         
                     </center>
                     <br /></li>
+                    <li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Alle-Kategorien</button>
+                          <div class="dropdown-content">
+                            <a href="../marken.html">Marken</a>
+                            <a href="../smartphonesundzubehör.html">Smartphones</a>
+                            <a href="../smartwatches.html">Smartwatch</a>
+                            <a href="../laptops_und_pcs.html">PC/Laptop</a>
+                            <a href="../Pc-Komponenten.html">PC-Komponenten</a>
+                            <a href="../monitore.html">Monitore</a>
+                            <a href="../Kopfhörer-und-Lautsprecher.html">Kopfhörer/Speaker</a>
+                            <a href="../Peripherie-gadgets.html">Peripherie</a>
+                          </div>
+                        </div></li>
             </ul>
         </nav>
-        <div class="search-button"><a href="../menu.html"><img src="../../home/pics/menu.jpg"></a></div>
-        <div class="search-button1"><a href="../search.html"><img src="../../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
+        <div class="search-button"><a href="../menu.html"><img src="../pics/menu.jpg"></a></div>
+        
         <h1><a href="../index.html"><img src="../pics/logo.png" width="130" height="40"/></a></h1>
     </div>
     <div class="produktlinks"><center><div class="tmp"><br /><br /><br /><br /><br />
 
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08JN54LK3&asins=B08JN54LK3&linkId=ac82dad07c68ad90a548811d68e4ac90&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08JMHG62F&asins=B08JMHG62F&linkId=403881259e9a8eedad068e4b3b63947b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07Z6NL7HB&asins=B07Z6NL7HB&linkId=5f51619d65564c64d883dbcb6ffe88d5&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07KPM58DZ&asins=B07KPM58DZ&linkId=35daf434228cc922207835e9ed8c5798&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07Z6MTN27&asins=B07Z6MTN27&linkId=eafbd961ce78ccc23084d47fd71a8d02&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07RLZZCVY&asins=B07RLZZCVY&linkId=687995a6a2ee2a8ab2e1d75a24d1cdbe&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B076L5FQ23&asins=B076L5FQ23&linkId=81da87596b9de988206bf8e172e4fc31&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07Z6QD7Q7&asins=B07Z6QD7Q7&linkId=5dd0ce043da70aebfbee1f0b40135afd&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B09GPDYMPN&asins=B09GPDYMPN&linkId=36283fb1bbebd58053f21e22f21409c6&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B09JX235TJ&asins=B09JX235TJ&linkId=b0407e2c9760fc740ce4081e153ff892&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08JLW6VK8&asins=B08JLW6VK8&linkId=eb21c355df8a576ec220f5910e01df87&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08JN8MCT5&asins=B08JN8MCT5&linkId=9b76c33812ff95a9247d4ec6a19b7793&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07RLVMT5N&asins=B07RLVMT5N&linkId=7e3edc308b2233a250a6df32f8ffaf86&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07RLVMT5N&asins=B07RLVMT5N&linkId=7e3edc308b2233a250a6df32f8ffaf86&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B09CT3B9T5&asins=B09CT3B9T5&linkId=239be45920dc9e78b03a41fad9ae1702&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08B4HKRSZ&asins=B08B4HKRSZ&linkId=49db2b1bfae033fd9e17529f5d7fd064&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B0964GCFRY&asins=B0964GCFRY&linkId=b8a7dafbc093c11a47bf3e34e5d076f5&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08SLSH9Y3&asins=B08SLSH9Y3&linkId=a492b153aa10043b14ce5b450f4afe01&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07VRQYV9M&asins=B07VRQYV9M&linkId=22102263e286a47b016192023a425d88&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B086QQKZDG&asins=B086QQKZDG&linkId=c129486be73b500cc7ca38a9e1b8664b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B001NEQ6RI&asins=B001NEQ6RI&linkId=ba378e0bd8a78202a2e7f18f13f58f13&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08H1PLJRJ&asins=B08H1PLJRJ&linkId=3a36123b0d2e8c867c92992d530761aa&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07G7P7R5K&asins=B07G7P7R5K&linkId=ccc014afd9988e3d916aa482908b01f7&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08K44C4K5&asins=B08K44C4K5&linkId=6c4fb23125c23099eae3490c6ed46ceb&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B09J3N3RFB&asins=B09J3N3RFB&linkId=793db0c9721b4d9208a8de60e3590112&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B08HRKMQQY&asins=B08HRKMQQY&linkId=13e545076499dddc3db6f12931e37e9d&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-        </iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </iframe>
         <iframe style="width:200px;height:400px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=DE&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=who0fb-21&marketplace=amazon&amp;region=DE&placement=B07PX3K455&asins=B07PX3K455&linkId=27b448173b5ec909c8ec7ac705238bef&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
         </iframe>
 

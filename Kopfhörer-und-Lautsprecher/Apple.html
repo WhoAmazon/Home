@@ -5,15 +5,17 @@
 <style>
     body{
         background-color: rgb(59, 59, 59);
+        margin: 0em;
+        padding: 0em;
     }
     h1{
         font-size: 2.5em;
-        line-height: 65px;
+        line-height: 55px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         background-color: #fad000;
         padding: 10px;
-        margin-top: -10px
+        margin-top: -20px
     }
 
     h2{
@@ -50,6 +52,7 @@
     .nav-bar{
         position: sticky;
         top: 0;
+        z-index: 2;
     }
 
     nav ul li{
@@ -182,7 +185,47 @@
         
     }
 
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown-content a:hover {background-color: gold;}
+
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 16px;
+      margin: 15px;
+      font-size: 18px;
+      border: none;
+    }
+
     @media(max-width:1000px) {
+
+        .dropdown{
+            display: none;
+        }
 
         .produktlinks{
             overflow: hidden;
@@ -200,13 +243,22 @@
            padding-left: 80px;
            
         
-    }
+        }
 
 
 
         h1 a img{
-            width: 300px;
-            height: 100px;
+            width: 320px;
+            height: 110px;
+            margin-top: 30px;
+        }
+
+        .dropdown{
+            display: none;
+        }
+        
+        h1{
+            line-height: 75px;
         }
 
         h4{
@@ -216,9 +268,10 @@
         }
 
         .nav-bar{
+        
         position: sticky;
-        z-index: 2;
         top: 0;
+        z-index: 2;
         }
 
         nav ul li{
@@ -234,23 +287,24 @@
 
         nav ul li form{
             display: none;
-
+        
         }   
 
         .nav-bar .search-button a img{
             float: right;
             display: block;
-            width: 120px;
-            padding: 10px;
+            width: 110px;
+            padding-right: 20px;
+            padding-top: 40px;
         }
 
         .nav-bar .search-button1 a img{
             float: left;
             display: block;
-            width: 100px;
+            width: 110px;
             padding-left: 10px;
+            padding-top: 40px;
         }
-            
 
 
         aside{
@@ -321,19 +375,7 @@
         <nav>
             
             <ul>
-                <li><a href="#">Alle Kategorien	↓</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="marken.html">Alle Marken</a></li>
-                        <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                        <li><a href="smartwatches.html">Smartwatches</a></li>
-                        <li><a href="laptops.html">Laptops</a></li>
-                        <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                        <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                        <li><a href="monitore.html">Monitore</a></li>
-                        <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                        <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                    </ul></li>
+                    
                     <li> <form action="https://www.amazon.com/s" target="_blank">
                         <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
                         <input id="k" name="k" placeholder="Search in Amazon...." >
@@ -342,10 +384,24 @@
                         
                     </center>
                     <br /></li>
+                    <li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Alle-Kategorien</button>
+                          <div class="dropdown-content">
+                            <a href="../marken.html">Marken</a>
+                            <a href="../smartphonesundzubehör.html">Smartphones</a>
+                            <a href="../smartwatches.html">Smartwatch</a>
+                            <a href="../laptops_und_pcs.html">PC/Laptop</a>
+                            <a href="../Pc-Komponenten.html">PC-Komponenten</a>
+                            <a href="../monitore.html">Monitore</a>
+                            <a href="../Kopfhörer-und-Lautsprecher.html">Kopfhörer/Speaker</a>
+                            <a href="../Peripherie-gadgets.html">Peripherie</a>
+                          </div>
+                        </div></li>
             </ul>
         </nav>
-        <div class="search-button"><a href="../menu.html"><img src="../../home/pics/menu.jpg"></a></div>
-        <div class="search-button1"><a href="../search.html"><img src="../../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
+        <div class="search-button"><a href="../menu.html"><img src="../pics/menu.jpg"></a></div>
+        
         <h1><a href="../index.html"><img src="../pics/logo.png" width="130" height="40"/></a></h1>
     </div>
     <div class="produktlinks">

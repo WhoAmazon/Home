@@ -9,7 +9,7 @@
     body{
         background-color: rgb(59, 59, 59);
         margin: 0em;
-        padding:0em
+        padding:0em;
     }
     h1{
         font-size: 2.5em;
@@ -114,11 +114,11 @@
 
 
    aside{
-        width: 280px;
+        width: 240px;
         background-color: #858585;
         margin: 20px;
         display: inline-block;
-        border-radius: 0.3em 0.3em 0.3em 0.3em;
+        border-radius: 0.4em 0.4em 0.4em 0.4em;
 
     }
 
@@ -126,6 +126,7 @@
     aside:hover{
         transform: scale(1.02);
         z-index: 2;
+        box-shadow:5px 5px #272727;
         
     }
 
@@ -139,6 +140,7 @@
 
 
     aside img{
+        width: 150px;
         border-radius: 0.5em 0.5em 0.5em 0.5em;
     }
 
@@ -260,6 +262,10 @@
     .produktempfehlung-bild{
         float: left;
     }
+
+    .video-comp{
+        width: 60%;
+    }
     
 
 
@@ -371,6 +377,11 @@
         
     }
 
+    .video-comp{
+        
+        width: 100%;
+    }
+
     
 
     .produktempfehlung a img{
@@ -456,15 +467,17 @@
                     </div></li>
         </ul>
     </nav>
-    <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
+    <div class="search-button"><a href="menu.html"><img src="pics/menu.jpg"></a></div>
     
     <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
 </div>
    
-<br /><br /><br /><br />
+<br /><br /><br />
 
 <center>
-<video src="pics/k.mp4" type="mp4/video" width="80%" height="60%" loop="true" autoplay="autoplay" controls muted></video>
+    <div class="video-comp">
+<video src="pics/k.mp4" type="mp4/video" width="80%" height="40%" loop="true" autoplay="autoplay" controls muted></video>
+</div>
 </center>
  
 <center>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <title>Monitore</title>
 <link href="fav.ico" rel="shortcut icon" />
-
 <style>
     body{
         background-color: rgb(59, 59, 59);
+        margin: 0em;
+        padding:0em;
     }
     h1{
         font-size: 2.5em;
-        line-height: 65px;
+        line-height: 55px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         background-color: #fad000;
         padding: 10px;
-        margin-top: -10px
+        margin-top: -20px
     }
 
     h2{
@@ -43,6 +44,7 @@
     .nav-bar{
         position: sticky;
         top: 0;
+        z-index: 2;
     }
 
     nav ul li{
@@ -99,12 +101,33 @@
 
 
    aside{
-        width: 180px;
-        background-color: #858585;
-        margin: 20px;
+        width: 20%;
+        height: 100px;
+        background-color: white;
+        margin: 2px;
         display: inline-block;
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
 
+    }
+
+    aside p{
+        color: black;
+        text-align: left;
+        margin: 0em;
+    }
+
+    aside h3{
+        display: none;
+    }
+
+    aside .description{
+        margin-top: 30px;
+    }
+
+    aside .description h3{
+        display: block;
+        font-size: 18px;
+        text-align: left;
+        margin: 0em;
     }
 
     aside a{
@@ -113,8 +136,8 @@
 
 
     aside:hover{
-        transform: scale(1.02);
-        z-index: 2;
+        background-color: #fad000;
+        transition: .3s;
         
     }
 
@@ -122,13 +145,11 @@
         text-decoration: none;
     }
 
-    a aside h3:hover{
-        color: gold;
-    }
-
 
     aside img{
-        border-radius: 0.5em 0.5em 0.5em 0.5em;
+        width: 70px;
+        float: left;
+        margin: 15px;
     }
 
     
@@ -219,14 +240,62 @@
         display: none;
     }
 
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 16px;
+      margin: 15px;
+      font-size: 18px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown-content a:hover {background-color: gold;}
+
+
     
     
 
 
     @media(max-width:1000px) {
+
+        .dropdown{
+            display: none;
+        }
         .a-box h4 u{
             display: none;
         }
+
+        .description{
+            display: none;
+        }
+
+        aside h3{
+        display:block;
+    }
 
         .vorschau aside{
         margin-bottom: 10px;
@@ -252,8 +321,15 @@
         }
 
         h1 a img{
-            width: 315px;
-            height: 100px;
+            width: 320px;
+            height: 110px;
+            margin-top: 30px;
+        }
+
+        
+        
+        h1{
+            line-height: 75px;
         }
 
         h4{
@@ -263,6 +339,7 @@
         }
 
         .nav-bar{
+        
         position: sticky;
         top: 0;
         z-index: 2;
@@ -287,16 +364,17 @@
         .nav-bar .search-button a img{
             float: right;
             display: block;
-            width: 120px;
+            width: 110px;
             padding-right: 20px;
-            padding-top: 10px;
+            padding-top: 40px;
         }
 
         .nav-bar .search-button1 a img{
             float: left;
             display: block;
-            width: 100px;
+            width: 110px;
             padding-left: 10px;
+            padding-top: 40px;
         }
             
 
@@ -320,6 +398,7 @@
             width:115px;
             padding: 20px;
             float: right;
+            margin: auto;
         }
         .kategorys{
             width: 100%;
@@ -370,19 +449,7 @@
         <nav>
             
             <ul>
-                <li><a href="#">Alle Kategorien	↓</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="marken.html">Alle Marken</a></li>
-                        <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                        <li><a href="smartwatches.html">Smartwatches</a></li>
-                        <li><a href="laptops.html">Laptops</a></li>
-                        <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                        <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                        <li><a href="monitore.html">Monitore</a></li>
-                        <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                        <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                    </ul></li>
+                    
                     <li> <form action="https://www.amazon.com/s" target="_blank">
                         <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
                         <input id="k" name="k" placeholder="Search in Amazon...." >
@@ -391,10 +458,24 @@
                         
                     </center>
                     <br /></li>
+                    <li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Alle-Kategorien</button>
+                          <div class="dropdown-content">
+                            <a href="marken.html">Marken</a>
+                            <a href="smartphonesundzubehör.html">Smartphones</a>
+                            <a href="smartwatches.html">Smartwatch</a>
+                            <a href="laptops_und_pcs.html">PC/Laptop</a>
+                            <a href="Pc-Komponenten.html">PC-Komponenten</a>
+                            <a href="monitore.html">Monitore</a>
+                            <a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer/Speaker</a>
+                            <a href="Peripherie-gadgets.html">Peripherie</a>
+                          </div>
+                        </div></li>
             </ul>
         </nav>
-        <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
-        <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
+        <div class="search-button"><a href="menu.html"><img src="pics/menu.jpg"></a></div>
+        
         <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
     </div>
    
@@ -416,13 +497,19 @@
             <a href="monitore/Lg.html"><aside>
             <h3>LG</h3>
                <center><img src="pics/Monitore/lg.png" width="120px"/></center>
+               <div class="description">
+                <h3>LG</h3>
+                <p>Gaming, Ultrafine</p></div>
                <br />
                <br />
            </aside></a>
 
            <a href="monitore/asus.html"><aside>
          <h3>Asus</h3>
-            <center><img src="pics/PC'S/asus.png" width="120px"/></center>
+            <center><img src="pics/Monitore/asus.png" width="120px"/></center>
+            <div class="description">
+                <h3>Asus</h3>
+                <p>Gaming, Desktop</p></div>
             <br />
             <br />
         </aside></a>
@@ -430,6 +517,9 @@
         <a href="monitore/hp.html"><aside>
          <h3>hp</h3>
              <center><img src="pics/Monitore/hp.png" width="120px"/></center>
+             <div class="description">
+                <h3>Hp</h3>
+                <p>Elite-Display, Pavilion</p></div>
              <br />
              <br />
         </aside></a>
@@ -437,6 +527,9 @@
         <a href="monitore/samsung.html"><aside>
             <h3>Samsung</h3>
                 <center><img src="pics/Monitore/samsung.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Samsung</h3>
+                    <p>Gaming, Curved, Desktop</p></div>
                 <br />
                 <br />
         </aside></a>
@@ -444,6 +537,9 @@
         <a href="monitore/medion.html"><aside>
                 <h3>Medion</h3>
                 <center><img src="pics/Monitore/medion.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Medion</h3>
+                    <p>Erazer</p></div>
                 <br />
                 <br />
             </aside></a>
@@ -452,6 +548,9 @@
             <a href="monitore/acer.html"><aside>
                 <h3>Acer</h3>
                 <center><img src="pics/Monitore/acer.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Acer</h3>
+                    <p>Nitro, Predator</p></div>
                 <br />
                 <br />
             </aside></a>
@@ -461,6 +560,9 @@
             <a href="monitore/aoc.html"><aside>
                 <h3>Aoc</h3>
                 <center><img src="pics/Monitore/aoc.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Aoc</h3>
+                    <p>Gaming C24, Desktop, Curved</p></div>
                 <br />
                 <br />
             </aside></a>
@@ -468,6 +570,9 @@
             <a href="monitore/gaming-monitore.html"><aside>
                 <h3>Gaming</h3>
                 <center><img src="pics/Monitore/gaming-monitore.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Gaming</h3>
+                    <p>MSI, Asus-Rog</p></div>
                 <br />
                 <br />
             </aside></a>
@@ -475,6 +580,9 @@
             <a href="monitore/ultrawide-monitore.html"><aside>
                 <h3>Ultrawide</h3>
                 <center><img src="pics/Monitore/ultrawide-monitore.png" width="120px"/></center>
+                <div class="description">
+                    <h3>Ultrawide</h3>
+                    <p>Samsung, Philips, LG</p></div>
                 <br />
                 <br />
             </aside></a>

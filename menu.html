@@ -4,24 +4,26 @@
 <style>
     body{
         background-color: rgb(59, 59, 59);
+        margin: 0em;
+        padding:0em;
     }
     h1{
         font-size: 2.5em;
-        line-height: 65px;
+        line-height: 55px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: left;
         background-color: #fad000;
         padding: 10px;
-        margin-top: -10px
+        margin-top: -20px
     }
 
     h2{
         text-align: right;
         padding: 20px;
-        font-size: 50px;
+        font-size: 14px;
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: gold;
+        color: white;
     }
     h2 img{
         float: left;
@@ -37,13 +39,6 @@
         font-size: 2.5em;
         color: black;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    h6{
-        text-align: left;
-        padding: 20px;
-        font-size: 35px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .nav-bar{
@@ -102,18 +97,20 @@
     .beschreibung{
         background-color: grey;
         border: 2px solid  gold;
-        width: 300px;
-        margin: 20px;
     }
 
 
    aside{
-        width: 280px;
+        width: 180px;
         background-color: #858585;
         margin: 20px;
         display: inline-block;
-        border-radius: 0.3em 0.3em 0.3em 0.3em;
+        border-radius: 0.7em 0.7em 0.7em 0.7em;
 
+    }
+
+    aside a{
+        text-decoration: none;
     }
 
 
@@ -161,6 +158,8 @@
             display: none;
         }
 
+        
+
     .nav-bar .search-button1 a img{
             display: none;
         }
@@ -180,9 +179,7 @@
         float: right;
     }
 
-    .a-box{
-        margin: 40px;
-    }
+    
     
     .kategorys3{
         background-color: rgb(156, 156, 156);
@@ -219,14 +216,93 @@
     .produktempfehlung-bild{
         float: left;
     }
+
+    .vorschau aside{
+        display: none;
+    }
+
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 16px;
+      margin: 15px;
+      font-size: 18px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown-content a:hover {background-color: gold;}
+
+
+    
     
 
 
     @media(max-width:1000px) {
 
+        .dropdown{
+            display: none;
+        }
+        .a-box h4 u{
+            display: none;
+        }
+
+        .vorschau aside{
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+        width: 100%;
+        height: 200px;
+        background-color: #DCDCDC;
+        display: block;
+        border-radius: 0.3em 0.3em 0.3em 0.3em;
+        }
+
+        .vorschau aside img{
+                border-radius: 0.5em 0.5em 0.5em 0.5em;
+                width:160px;
+                padding: 20px;
+                float: right;
+        }
+
+        .vorschau aside h3{
+                float: left;
+                padding: 10px;
+                font-size: 3em;
+        }
+
         h1 a img{
-            width: 300px;
-            height: 100px;
+            width: 320px;
+            height: 110px;
+            margin-top: 30px;
+        }
+
+        
+        
+        h1{
+            line-height: 75px;
         }
 
         h4{
@@ -236,6 +312,7 @@
         }
 
         .nav-bar{
+        
         position: sticky;
         top: 0;
         z-index: 2;
@@ -260,16 +337,17 @@
         .nav-bar .search-button a img{
             float: right;
             display: block;
-            width: 120px;
+            width: 110px;
             padding-right: 20px;
-            padding-top: 10px;
+            padding-top: 40px;
         }
 
         .nav-bar .search-button1 a img{
             float: left;
             display: block;
-            width: 100px;
+            width: 110px;
             padding-left: 10px;
+            padding-top: 40px;
         }
             
 
@@ -290,7 +368,7 @@
         }
         aside img{
             border-radius: 0.5em 0.5em 0.5em 0.5em;
-            width:120px;
+            width:115px;
             padding: 20px;
             float: right;
         }
@@ -330,60 +408,48 @@
     }
         
     .produktempfehlung-bild a img{
-        width: 100px;
+    
+        width: 100px
     }
-    }
-
-
-    .intro{
-        background-image: url(pics/computer-g0efe189e0_1920.png);
-    }
-
-    .index-img img{
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
-        margin: 20px;
-    }
-
-    .index-img2 img{
-        border-radius: 0.7em 0.7em 0.7em 0.7em;
-        margin: 20px;
     }
     
 
 
 </style>
 <body>
-<div class="nav-bar">
-    <nav>
-        
-        <ul>
-            <li><a href="#">Alle Kategorien	↓</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="marken.html">Alle Marken</a></li>
-                    <li><a href="smartphonesundzubehör.html">Smartphones</a></li>
-                    <li><a href="smartwatches.html">Smartwatches</a></li>
-                    <li><a href="laptops.html">Laptops</a></li>
-                    <li><a href="stand-pc's.html">Stand-Pc's</a></li>
-                    <li><a href="Pc-Komponenten.html">Komponenten</a></li>
-                    <li><a href="monitore.html">Monitore</a></li>
-                    <li><a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer</a></li>
-                    <li><a href="Peripherie-gadgets.html">Peripherie</a></li>
-                </ul></li>
-                <li> <form action="https://www.amazon.com/s" target="_blank">
-                    <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
-                    <input id="k" name="k" placeholder="Search in Amazon...." >
-                    <button>Search</button>
-                    </form>
+    <div class="nav-bar">
+        <nav>
+            
+            <ul>
                     
-                </center>
-                <br /></li>
-        </ul>
-    </nav>
-    <div class="search-button"><a href="menu.html"><img src="../home/pics/menu.jpg"></a></div>
-    <div class="search-button1"><a href="search.html"><img src="../home/pics/magnifying-glass-ga20db3a36_1280.png"></a></div>
-    <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
-</div>
+                    <li> <form action="https://www.amazon.com/s" target="_blank">
+                        <label for="q"><span style="color: gold; font-family: Arial, Helvetica, sans-serif;">Amazon-Who?</span></label>
+                        <input id="k" name="k" placeholder="Search in Amazon...." >
+                        <button>Search</button>
+                        </form>
+                        
+                    </center>
+                    <br /></li>
+                    <li>
+                        <div class="dropdown">
+                          <button class="dropbtn">Alle-Kategorien</button>
+                          <div class="dropdown-content">
+                            <a href="marken.html">Marken</a>
+                            <a href="smartphonesundzubehör.html">Smartphones</a>
+                            <a href="smartwatches.html">Smartwatch</a>
+                            <a href="laptops_und_pcs.html">PC/Laptop</a>
+                            <a href="Pc-Komponenten.html">PC-Komponenten</a>
+                            <a href="monitore.html">Monitore</a>
+                            <a href="Kopfhörer-und-Lautsprecher.html">Kopfhörer/Speaker</a>
+                            <a href="Peripherie-gadgets.html">Peripherie</a>
+                          </div>
+                        </div></li>
+            </ul>
+        </nav>
+        <div class="search-button"><a href="menu.html"><img src="pics/menu.jpg"></a></div>
+        
+        <h1><a href="index.html"><img src="pics/logo.png" width="130" height="40"/></a></h1>
+    </div>
    
 
 
